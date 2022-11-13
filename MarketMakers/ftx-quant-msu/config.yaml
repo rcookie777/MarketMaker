@@ -1,0 +1,36 @@
+api_key: ""
+api_secret: ""
+api_passphrase: ""
+rest_url: ""
+subaccount: "Spartans"
+symbol: "BTCUSD.PERP"
+index_symbol: ".BTCUSD"
+dry_run: False # dry run will not send order and only print them to screen
+reference_price_type: "mid" # options: "index", "mid"
+strat: "LOB"
+leverage: 2000 # 20x leverage. 100 corresponds to 1x leverage.
+min_spread: 0.0005
+offset_pct: 0.0001 # used to calculat start prices (e.g. 0.01 is 1% off either side ref price)
+stack_pct: 0.001 # e.g. 0.01 is 1% of start price per level
+relist_tolerance: 0.00075
+is_random_order_size: false
+start_order_size: 2
+order_step_size: 10
+num_levels: 2 # the number of orders the MM will make on each side
+max_long_pos_btc: 1
+max_short_pos_btc: 1
+max_half_spread_depth_bps: 0.0001 # max number of basis points from the midpoint to place trade on either side
+order_size: 0.0001
+min_sec_between_orders: 5.0
+debug:
+    message_time: False
+    orderbook: True
+    place_order: True
+    cancel_order: False
+    messages:
+        all: False
+        fills: False
+        orders: False
+        orderbook: False
+
+
